@@ -1,0 +1,17 @@
+
+.main-content-wrapper{
+    border: solid green;
+    height: 100vh;
+    display: flex;
+}
+
+.input-info-wrapper {
+  /* border: solid yellow; */
+  width: 50%;
+  height: 100vh;
+}
+
+.rendered-resume {
+  border: dotted blue;
+  width: 50%;
+}
