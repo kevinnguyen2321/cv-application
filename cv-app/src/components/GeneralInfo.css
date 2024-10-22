@@ -1,0 +1,14 @@
+.general-info-wrapper {
+  border: solid black;
+  width: 65%;
+}
+
+.input-wrapper form {
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper form input {
+    width: 40%;
+}

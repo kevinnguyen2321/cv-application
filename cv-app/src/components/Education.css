@@ -1,0 +1,13 @@
+.education-wrapper {
+  border: solid rgb(255, 87, 87);
+  width: 65%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 40%;
+}

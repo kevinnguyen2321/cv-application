@@ -1,0 +1,23 @@
+.resume-wrapper {
+  border: solid black;
+  width: 85%;
+  margin-left: 55px;
+  margin-top: 12px;
+}
+
+.resume-header {
+  border: solid yellow;
+  text-align: center;
+}
+
+.info-bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
