@@ -31,6 +31,22 @@ export const GeneralInfo = ({ handleGeneralInfoChange }) => {
             onChange={handleGeneralInfoChange}
             required
           />
+          <label>Current Position:</label>
+          <input
+            type='text'
+            name='currentPosition'
+            onChange={handleGeneralInfoChange}
+          />
+        </form>
+      </div>
+      <div className='about-me-wrapper'>
+        <form>
+          <label>About me</label>
+          <textarea
+            name='aboutMe'
+            id='aboutMe'
+            onChange={handleGeneralInfoChange}
+          ></textarea>
         </form>
       </div>
     </div>

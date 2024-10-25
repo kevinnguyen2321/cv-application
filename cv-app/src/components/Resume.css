@@ -1,13 +1,16 @@
 .resume-wrapper {
   border: solid black;
-  width: 85%;
-  margin-left: 55px;
-  margin-top: 12px;
+  width: 75%;
+  margin: 20px auto 0 auto;
+  height: 95vh;
 }
 
 .resume-header {
-  border: solid yellow;
+  border-bottom: solid yellow;
   text-align: center;
+}
+.content-wrapper {
+  display: flex;
 }
 
 .info-bold {
@@ -20,4 +23,41 @@
 
 .italic {
   font-style: italic;
+}
+
+.left-side {
+  border: solid black;
+  width: 35%;
+  height: 89vh;
+}
+
+.right-side {
+  border: solid red;
+  width: 65%;
+}
+
+.work-dates {
+  font-weight: normal;
+}
+
+.about-me-resume-wrapper {
+  margin-bottom: 20px;
+  border-bottom: dotted green;
+  padding: 15px;
+}
+
+.about-me-text {
+  font-size: 0.9rem;
+}
+
+.about-header {
+  margin-bottom: 12px;
+}
+
+.experience-header {
+  margin-bottom: 12px;
+}
+
+.work-info-resume-wrapper {
+  padding: 15px;
 }

@@ -1,14 +1,24 @@
 .general-info-wrapper {
   border: solid black;
   width: 65%;
+  display: flex;
+}
+
+.input-wrapper {
+  width: 50%;
 }
 
 .input-wrapper form {
-    border: solid yellow;
-    display: flex;
-    flex-direction: column;
+  border: solid yellow;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-wrapper form input {
-    width: 40%;
+  width: 70%;
+}
+
+.about-me-wrapper {
+  border: dotted blue;
+  width: 50%;
 }
