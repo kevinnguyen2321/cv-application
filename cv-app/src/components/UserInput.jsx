@@ -14,19 +14,38 @@ export const UserInput = () => {
     aboutMe: `As a Senior Graphic Designer with over [X] years of experience, I am passionate about turning creative concepts into visual stories that engage, inspire, and communicate with precision. My expertise spans across branding, digital design, and print media, where I’ve had the opportunity to lead design projects for both global brands and innovative startups.
     My design philosophy is rooted in a deep understanding of both aesthetics and functionality. I believe in creating designs that not only look stunning but also serve a clear purpose. From crafting compelling brand identities to designing user-centric web and mobile interfaces, I thrive in collaborative environments that push the boundaries of creativity.`,
   });
-  const [educationInfo, setEducationInfo] = useState({
-    schoolName: 'Oxford University',
-    studyTitle: "Bachelor's in Graphic Designing, B.A",
-    dateOfStudy: 'August 2015 - May 2019',
-  });
+  // const [educationInfo, setEducationInfo] = useState({
+  //   schoolName: 'Oxford University',
+  //   studyTitle: "Bachelor's in Graphic Designing, B.A",
+  //   dateOfStudy: 'August 2015 - May 2019',
+  // });
+
+  const [educationInfo, setEducationInfo] = useState([
+    {
+      schoolName: 'Oxford University',
+      studyTitle: "Bachelor's in Graphic Designing, B.A",
+      dateOfStudy: 'August 2015 - May 2019',
+    },
+  ]);
+
   const [workInfo, setWorkInfo] = useState({
     companyName: 'Google',
     positionTitle: 'Lead Graphic designer',
-    responsibilites:
-      'Lead a team of junior designers in a collabrative setting',
+    responsibilites: `
+    - Led creative design projects from concept to completion, focusing on branding, digital media, and print design for diverse client portfolios.
+    - Managed and mentored junior designers, providing guidance on best practices in visual design, typography, and layout for brand consistency and project success.
+    - Collaborated cross-functionally with marketing and product teams to ensure cohesive branding and messaging across all digital channels.
+    `,
     dateFrom: 'Aug 2018',
     dateUntil: 'November 2020',
   });
+
+  const addEducationEntry = () => {
+    setEducationInfo([
+      ...educationInfo,
+      { schoolName: '', dateOfStudy: '', studyTitle: '' },
+    ]);
+  };
 
   const handleGeneralInfoChange = (e) => {
     const generalInfoCopy = { ...generalInfo };

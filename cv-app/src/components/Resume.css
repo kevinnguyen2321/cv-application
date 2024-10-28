@@ -61,3 +61,12 @@
 .work-info-resume-wrapper {
   padding: 15px;
 }
+
+.responsibilities-resume-wrapper {
+  white-space: pre-line;
+}
+
+.companyName-resume-wrapper {
+  margin-top: 5px;
+  font-style: italic;
+}

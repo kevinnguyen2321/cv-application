@@ -18,11 +18,20 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
 
           <div className='education-resume-wrapper'>
             <h2>Education</h2>
-            <p>
-              {educationInfo.schoolName}
-              <span>{educationInfo.dateOfStudy}</span>{' '}
-            </p>
-            <p>{educationInfo.studyTitle}</p>
+            {educationInfo.map((educationEl) => {
+              return (
+                <div
+                  className='education-resume-info'
+                  key={educationEl.schoolName}
+                >
+                  <p>
+                    {educationEl.schoolName}
+                    <span>{educationEl.dateOfStudy}</span>{' '}
+                  </p>
+                  <p>{educationEl.studyTitle}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -38,8 +47,10 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
               {workInfo.positionTitle}
               <span className='work-dates'>{`${workInfo.dateFrom} | ${workInfo.dateUntil}`}</span>
             </h4>
-            <p>{workInfo.companyName}</p>
-            <p>{workInfo.responsibilites}</p>
+            <p className='companyName-resume-wrapper'>{workInfo.companyName}</p>
+            <p className='responsibilities-resume-wrapper'>
+              {workInfo.responsibilites}
+            </p>
           </div>
         </div>
       </div>

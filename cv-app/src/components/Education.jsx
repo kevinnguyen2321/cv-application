@@ -1,35 +1,38 @@
+import { Children, useState } from 'react';
 import './Education.css';
+import { v4 as uuidv4 } from 'uuid';
+import { EducationForm } from './EducationForm';
 
 export const Education = ({ handleEducationInfoChange }) => {
+  const [educationFormChildren, setEducationFormChildren] = useState([
+    { id: 1 },
+  ]);
+
+  const addNewEducationForm = (e) => {
+    setEducationFormChildren([...educationFormChildren, { id: uuidv4() }]);
+  };
+
+  const removeForm = (event, id) => {
+    event.preventDefault();
+
+    setEducationFormChildren(
+      educationFormChildren.filter((form) => form.id !== id)
+    );
+  };
   return (
     <div className='education-wrapper'>
       <h2>Education</h2>
-      <form>
-        <label htmlFor='school-name'>School Name:</label>
-        <input
-          type='text'
-          id='school-name'
-          name='schoolName'
-          onChange={handleEducationInfoChange}
-          required
-        />
-        <label htmlFor='study-title'>Title of Study:</label>
-        <input
-          type='text'
-          id='study-title'
-          name='studyTitle'
-          onChange={handleEducationInfoChange}
-          required
-        />
-        <label htmlFor='date'>Date of study</label>
-        <input
-          type='text'
-          id='date'
-          name='dateOfStudy'
-          onChange={handleEducationInfoChange}
-          required
-        />
-      </form>
+      {educationFormChildren.map((form) => {
+        return (
+          <EducationForm
+            key={form.id}
+            id={form.id}
+            handleEducationInfoChange={handleEducationInfoChange}
+            addNewEducationForm={addNewEducationForm}
+            removeForm={removeForm}
+          />
+        );
+      })}
     </div>
   );
 };
