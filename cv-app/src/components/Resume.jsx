@@ -20,10 +20,7 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
             <h2>Education</h2>
             {educationInfo.map((educationEl) => {
               return (
-                <div
-                  className='education-resume-info'
-                  key={educationEl.schoolName}
-                >
+                <div className='education-resume-info' key={educationEl.id}>
                   <p>
                     {educationEl.schoolName}
                     <span>{educationEl.dateOfStudy}</span>{' '}
@@ -43,14 +40,22 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
 
           <div className='work-info-resume-wrapper'>
             <h2 className='experience-header'>Work Experience</h2>
-            <h4>
-              {workInfo.positionTitle}
-              <span className='work-dates'>{`${workInfo.dateFrom} | ${workInfo.dateUntil}`}</span>
-            </h4>
-            <p className='companyName-resume-wrapper'>{workInfo.companyName}</p>
-            <p className='responsibilities-resume-wrapper'>
-              {workInfo.responsibilites}
-            </p>
+            {workInfo.map((workEl) => {
+              return (
+                <div key={workEl.id}>
+                  <h4>
+                    {workEl.positionTitle}
+                    <span className='work-dates'>{`${workEl.dateFrom} | ${workEl.dateUntil}`}</span>
+                  </h4>
+                  <p className='companyName-resume-wrapper'>
+                    {workEl.companyName}
+                  </p>
+                  <p className='responsibilities-resume-wrapper'>
+                    {workEl.responsibilites}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

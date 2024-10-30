@@ -3,9 +3,13 @@ import './Education.css';
 export const EducationForm = ({
   id,
   handleEducationInfoChange,
-  addNewEducationForm,
-  removeForm,
+  removeEducationEntry,
+  addEducationEntry,
+  isInitial,
 }) => {
+  const handleAddBtnClick = () => {
+    addEducationEntry();
+  };
   return (
     <form>
       <label htmlFor='school-name'>School Name:</label>
@@ -13,7 +17,9 @@ export const EducationForm = ({
         type='text'
         id='school-name'
         name='schoolName'
-        onChange={handleEducationInfoChange}
+        onChange={(e) =>
+          handleEducationInfoChange(id, 'schoolName', e.target.value)
+        }
         required
       />
       <label htmlFor='study-title'>Title of Study:</label>
@@ -21,7 +27,9 @@ export const EducationForm = ({
         type='text'
         id='study-title'
         name='studyTitle'
-        onChange={handleEducationInfoChange}
+        onChange={(e) =>
+          handleEducationInfoChange(id, 'studyTitle', e.target.value)
+        }
         required
       />
       <label htmlFor='date'>Date of study</label>
@@ -29,17 +37,27 @@ export const EducationForm = ({
         type='text'
         id='date'
         name='dateOfStudy'
-        onChange={handleEducationInfoChange}
+        onChange={(e) =>
+          handleEducationInfoChange(id, 'dateOfStudy', e.target.value)
+        }
         required
       />
-      <button onClick={addNewEducationForm}>Add</button>
       <button
         onClick={() => {
-          removeForm(event, id);
+          handleAddBtnClick();
         }}
       >
-        Delete
+        Add
       </button>
+      {!isInitial && (
+        <button
+          onClick={() => {
+            removeEducationEntry(id);
+          }}
+        >
+          Delete
+        </button>
+      )}
     </form>
   );
 };
