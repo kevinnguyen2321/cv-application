@@ -1,8 +1,7 @@
-
-.main-content-wrapper{
-    border: solid green;
-    height: 100vh;
-    display: flex;
+.main-content-wrapper {
+  /* border: solid green; */
+  height: 100vh;
+  display: flex;
 }
 
 .input-info-wrapper {
@@ -12,6 +11,6 @@
 }
 
 .rendered-resume {
-  border: dotted blue;
+  /* border: dotted blue; */
   width: 50%;
 }

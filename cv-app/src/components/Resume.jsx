@@ -21,9 +21,11 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
             {educationInfo.map((educationEl) => {
               return (
                 <div className='education-resume-info' key={educationEl.id}>
-                  <p>
-                    {educationEl.schoolName}
-                    <span>{educationEl.dateOfStudy}</span>{' '}
+                  <p className='school-name-wrapper'>
+                    {educationEl.schoolName} {'-'}
+                    <span className='education-studyDates'>
+                      {educationEl.dateOfStudy}
+                    </span>{' '}
                   </p>
                   <p>{educationEl.studyTitle}</p>
                 </div>
@@ -42,9 +44,9 @@ export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
             <h2 className='experience-header'>Work Experience</h2>
             {workInfo.map((workEl) => {
               return (
-                <div key={workEl.id}>
+                <div className='work-el-wrapper' key={workEl.id}>
                   <h4>
-                    {workEl.positionTitle}
+                    {workEl.positionTitle}{' '}
                     <span className='work-dates'>{`${workEl.dateFrom} | ${workEl.dateUntil}`}</span>
                   </h4>
                   <p className='companyName-resume-wrapper'>

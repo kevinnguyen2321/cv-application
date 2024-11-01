@@ -1,16 +1,33 @@
 .resume-wrapper {
-  border: solid black;
+  border: solid white;
   width: 75%;
-  margin: 20px auto 0 auto;
-  height: 95vh;
+  margin: 0 auto 0 auto;
+  padding-top: 5px;
+  background-color: white;
 }
 
 .resume-header {
-  border-bottom: solid yellow;
+  border-bottom: solid 1px rgb(0, 0, 0);
   text-align: center;
+}
+
+.resume-header h2 {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.resume-header h2,
+.resume-header p {
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .content-wrapper {
   display: flex;
+  margin-top: 8px;
+}
+
+.contact-wrapper {
+  margin-bottom: 25px;
 }
 
 .info-bold {
@@ -26,13 +43,12 @@
 }
 
 .left-side {
-  border: solid black;
   width: 35%;
-  height: 89vh;
+  background-color: rgb(245, 240, 240);
 }
 
 .right-side {
-  border: solid red;
+  /* border: solid red; */
   width: 65%;
 }
 
@@ -42,7 +58,7 @@
 
 .about-me-resume-wrapper {
   margin-bottom: 20px;
-  border-bottom: dotted green;
+  border-bottom: solid 1px black;
   padding: 15px;
 }
 
@@ -69,4 +85,23 @@
 .companyName-resume-wrapper {
   margin-top: 5px;
   font-style: italic;
+}
+
+.education-resume-info {
+  margin-bottom: 15px;
+}
+
+.education-resume-wrapper {
+  font-size: 1rem;
+}
+
+.school-name-wrapper {
+  border: solid green;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.work-el-wrapper {
+  margin-bottom: 25px;
 }

@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Merriweather,'Times New Roman', Times, serif;
+  color: rgba(0, 0, 0, 0.856);
+  background-color: rgba(219, 218, 218, 0.76);
+}
