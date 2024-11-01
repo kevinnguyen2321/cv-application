@@ -1,24 +1,62 @@
 .general-info-wrapper {
-  border: solid black;
-  width: 65%;
+  width: 100%;
   display: flex;
+  border-radius: 15px;
+  margin-left: 20px;
 }
 
 .input-wrapper {
-  width: 50%;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+}
+.input-wrapper h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
 .input-wrapper form {
-  border: solid yellow;
   display: flex;
   flex-direction: column;
 }
 
-.input-wrapper form input {
-  width: 70%;
+.input-wrapper label {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #34495e;
+  outline: none;
+  transition: border-color 0.2s;
 }
 
 .about-me-wrapper {
-  border: dotted blue;
-  width: 50%;
+  width: 100%;
+}
+
+.general-info-form {
+  border: none;
+}
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .general-info-wrapper {
+    width: 100vw;
+  }
+
+  .input-wrapper input,
+  .input-wrapper textarea {
+    width:90%;
+  }
 }

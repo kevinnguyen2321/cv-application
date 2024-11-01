@@ -1,4 +1,15 @@
 .work-experience-wrapper {
-  border: solid black;
-  width: 65%;
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .work-experience-wrapper {
+    width: 100vw;
+  }
 }

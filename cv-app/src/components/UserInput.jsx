@@ -120,19 +120,21 @@ export const UserInput = () => {
     <>
       <div className='main-content-wrapper'>
         <div className='input-info-wrapper'>
-          <GeneralInfo handleGeneralInfoChange={handleGeneralInfoChange} />
-          <Education
-            handleEducationInfoChange={handleEducationInfoChange}
-            addEducationEntry={addEducationEntry}
-            educationInfo={educationInfo}
-            removeEducationEntry={removeEducationEntry}
-          />
-          <WorkExperience
-            handleWorkInfoChange={handleWorkInfoChange}
-            workInfo={workInfo}
-            addWorkEntry={addWorkEntry}
-            removeWorkEntry={removeWorkEntry}
-          />
+          <div className='input-left-side'>
+            <GeneralInfo handleGeneralInfoChange={handleGeneralInfoChange} />
+            <Education
+              handleEducationInfoChange={handleEducationInfoChange}
+              addEducationEntry={addEducationEntry}
+              educationInfo={educationInfo}
+              removeEducationEntry={removeEducationEntry}
+            />
+            <WorkExperience
+              handleWorkInfoChange={handleWorkInfoChange}
+              workInfo={workInfo}
+              addWorkEntry={addWorkEntry}
+              removeWorkEntry={removeWorkEntry}
+            />
+          </div>
         </div>
 
         <div className='rendered-resume'>

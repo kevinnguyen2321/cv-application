@@ -5,7 +5,7 @@ export const GeneralInfo = ({ handleGeneralInfoChange }) => {
     <div className='general-info-wrapper'>
       <div className='input-wrapper'>
         <h2>General Information</h2>
-        <form>
+        <form className='general-info-form'>
           <label htmlFor='name'>Name:</label>
           <input
             type='text'
@@ -38,16 +38,16 @@ export const GeneralInfo = ({ handleGeneralInfoChange }) => {
             onChange={handleGeneralInfoChange}
           />
         </form>
-      </div>
-      <div className='about-me-wrapper'>
-        <form>
-          <label>About me</label>
-          <textarea
-            name='aboutMe'
-            id='aboutMe'
-            onChange={handleGeneralInfoChange}
-          ></textarea>
-        </form>
+        <div className='about-me-wrapper'>
+          <form>
+            <label>About me</label>
+            <textarea
+              name='aboutMe'
+              id='aboutMe'
+              onChange={handleGeneralInfoChange}
+            ></textarea>
+          </form>
+        </div>
       </div>
     </div>
   );

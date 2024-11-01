@@ -42,7 +42,7 @@ export const EducationForm = ({
         }
         required
       />
-      <button
+      <button className='add-button'
         onClick={() => {
           handleAddBtnClick();
         }}
@@ -50,7 +50,7 @@ export const EducationForm = ({
         Add
       </button>
       {!isInitial && (
-        <button
+        <button className='delete-button'
           onClick={() => {
             removeEducationEntry(id);
           }}

@@ -1,9 +1,10 @@
 .resume-wrapper {
   border: solid white;
   width: 75%;
-  margin: 0 auto 0 auto;
-  padding-top: 5px;
+  margin: 25px auto 0 auto;
+  /* padding-top: 5px; */
   background-color: white;
+  padding: 15px;
 }
 
 .resume-header {
@@ -45,6 +46,7 @@
 .left-side {
   width: 35%;
   background-color: rgb(245, 240, 240);
+  padding: 8px;
 }
 
 .right-side {
@@ -96,7 +98,6 @@
 }
 
 .school-name-wrapper {
-  border: solid green;
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
@@ -104,4 +105,12 @@
 
 .work-el-wrapper {
   margin-bottom: 25px;
+}
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .rendered-resume {
+    border: solid black;
+  }
 }

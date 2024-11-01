@@ -1,6 +1,22 @@
 .header-wrapper {
-  border: solid black;
+  border-bottom: solid 1px black;
   text-align: center;
   font-size: 1.6rem;
   background-color: white;
+}
+
+/* Small Mobile (Up to 320px) */
+@media (max-width: 320px) {
+  /* Add your styles for small mobile devices here */
+  .header-wrapper {
+    width: 100%;
+  }
+}
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .header-wrapper {
+    width: 100%;
+  }
 }

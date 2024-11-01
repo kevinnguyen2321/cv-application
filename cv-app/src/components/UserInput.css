@@ -8,9 +8,28 @@
   /* border: solid yellow; */
   width: 50%;
   height: 100vh;
+  /* border: solid blue; */
+}
+
+.input-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .rendered-resume {
   /* border: dotted blue; */
   width: 50%;
+}
+
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .main-content-wrapper {
+    border: solid yellow;
+    flex-direction: column;
+    align-items: center;
+  }
 }

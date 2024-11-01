@@ -1,13 +1,54 @@
 .education-wrapper {
-  border: solid rgb(255, 87, 87);
-  width: 65%;
+  width: 100%;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.education-wrapper h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
 }
 
-form input {
-  width: 40%;
+form label {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
 }
+
+form input,
+form textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #34495e;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+
+/* Mobile (321px - 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Add your styles for mobile devices here */
+  .education-wrapper {
+    width: 100vw;
+  }
+
+  form input, form textarea {
+    width: 90%;
+  }
+}
+

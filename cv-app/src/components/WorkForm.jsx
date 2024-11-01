@@ -54,9 +54,12 @@ export const WorkForm = ({
         required
       />
 
-      <button onClick={addWorkEntry}>Add</button>
+      <button className='add-button' onClick={addWorkEntry}>
+        Add
+      </button>
       {!isInitial && (
         <button
+          className='delete-button'
           onClick={() => {
             removeWorkEntry(id);
           }}
