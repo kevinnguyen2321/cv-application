@@ -42,6 +42,8 @@ export const UserInput = () => {
     },
   ]);
 
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   useEffect(() => {
     localStorage.setItem('workInfo', JSON.stringify(workInfo));
   }, [workInfo]);
@@ -116,23 +118,42 @@ export const UserInput = () => {
     setWorkInfo(updatedArr);
   };
 
+  const handleViewResumeClick = () => {
+    if (!isResumeOpen) {
+      setIsResumeOpen(true);
+    } else {
+      setIsResumeOpen(false);
+    }
+  };
+
   return (
     <>
+      <button
+        onClick={handleViewResumeClick}
+        className={isResumeOpen ? 'close-resume' : 'view-resume-btn'}
+      >
+        {isResumeOpen ? 'Close Resume' : 'View Resume'}
+      </button>
       <div className='main-content-wrapper'>
         <div className='input-info-wrapper'>
           <div className='input-left-side'>
-            <GeneralInfo handleGeneralInfoChange={handleGeneralInfoChange} />
+            <GeneralInfo
+              handleGeneralInfoChange={handleGeneralInfoChange}
+              isResumeOpen={isResumeOpen}
+            />
             <Education
               handleEducationInfoChange={handleEducationInfoChange}
               addEducationEntry={addEducationEntry}
               educationInfo={educationInfo}
               removeEducationEntry={removeEducationEntry}
+              isResumeOpen={isResumeOpen}
             />
             <WorkExperience
               handleWorkInfoChange={handleWorkInfoChange}
               workInfo={workInfo}
               addWorkEntry={addWorkEntry}
               removeWorkEntry={removeWorkEntry}
+              isResumeOpen={isResumeOpen}
             />
           </div>
         </div>
@@ -142,6 +163,7 @@ export const UserInput = () => {
             generalInfo={generalInfo}
             educationInfo={educationInfo}
             workInfo={workInfo}
+            isResumeOpen={isResumeOpen}
           />
         </div>
       </div>

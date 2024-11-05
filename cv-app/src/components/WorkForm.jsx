@@ -55,7 +55,7 @@ export const WorkForm = ({
       />
 
       <button className='add-button' onClick={addWorkEntry}>
-        Add
+        Add Work Experience
       </button>
       {!isInitial && (
         <button

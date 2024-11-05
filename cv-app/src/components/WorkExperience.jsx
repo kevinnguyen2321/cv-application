@@ -6,9 +6,13 @@ export const WorkExperience = ({
   workInfo,
   addWorkEntry,
   removeWorkEntry,
+  isResumeOpen,
 }) => {
   return (
-    <div className='work-experience-wrapper'>
+    <div
+      className='work-experience-wrapper'
+      style={{ display: isResumeOpen ? 'none' : 'block' }}
+    >
       <h2>Work Experience</h2>
       {workInfo.map((entry) => {
         return (

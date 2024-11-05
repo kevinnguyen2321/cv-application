@@ -48,11 +48,87 @@ button {
   transform: scale(0.95); /* Slight shrink effect on click */
 }
 
+.view-resume-btn {
+  display: none;
+  background-color: #27ae60;
+}
+
+.close-resume {
+  background-color: #e74c3c;
+}
+
+/* MEDIA QUERIES */
+
+/* Small Mobile (Up to 320px) */
+@media (max-width: 320px) {
+  /* Add your styles for small mobile devices here */
+  button {
+    width: 60%;
+  }
+  .view-resume-btn {
+    display: block;
+  }
+  .close-resume {
+    display: block;
+  }
+}
 
 /* Mobile (321px - 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
   /* Add your styles for mobile devices here */
   button {
     width: 70%;
+  }
+
+  .view-resume-btn {
+    display: block;
+  }
+  .close-resume {
+    display: block;
+  }
+}
+
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Add your styles for large mobile or small tablet devices here */
+  button {
+    width: 40%;
+  }
+
+  .view-resume-btn {
+    display: block;
+  }
+  .close-resume {
+    display: block;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablet devices here */
+  button {
+    width: 20%;
+  }
+
+  .view-resume-btn {
+    display: block;
+  }
+  .close-resume {
+    display: block;
+  }
+}
+
+/* Laptops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Add your styles for laptop devices here */
+  button {
+    width: 20%;
+  }
+
+  .view-resume-btn {
+    display: block;
+  }
+  .close-resume {
+    display: block;
   }
 }

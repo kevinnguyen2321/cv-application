@@ -39,6 +39,15 @@ form textarea {
   transition: border-color 0.2s;
 }
 
+/* MEDIA QUERIES */
+/* Small Mobile (Up to 320px) */
+@media (max-width: 320px) {
+  /* Add your styles for small mobile devices here */
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
 
 /* Mobile (321px - 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
@@ -47,8 +56,37 @@ form textarea {
     width: 100vw;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     width: 90%;
   }
 }
 
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Add your styles for large mobile or small tablet devices here */
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablet devices here */
+  form input,
+  form textarea {
+    width: 80%;
+  }
+
+}
+
+
+/* Laptops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Add your styles for laptop devices here */
+  form input,
+  form textarea {
+    width: 60%;
+  }
+}

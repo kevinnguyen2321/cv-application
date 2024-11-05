@@ -107,10 +107,134 @@
   margin-bottom: 25px;
 }
 
+/* MEDIA QUERIES */
+
+/* Small Mobile (Up to 320px) */
+@media (max-width: 320px) {
+  /* Add your styles for small mobile devices here */
+  .resume-wrapper {
+    width: 100vw;
+    padding: 15px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 104px;
+    left: 0;
+  }
+
+  .contact-wrapper p {
+    font-size: 0.44rem;
+  }
+
+  .contact-wrapper h2 {
+    font-size: 1rem;
+  }
+  .education-resume-info p {
+    font-size: 0.44rem;
+  }
+
+  .education-resume-wrapper h2 {
+    font-size: 1rem;
+  }
+
+  .about-me-text {
+    font-size: 0.7rem;
+  }
+
+  .work-el-wrapper p {
+    font-size: 0.7rem;
+  }
+}
+
 /* Mobile (321px - 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
-  /* Add your styles for mobile devices here */
-  .rendered-resume {
-    border: solid black;
+  .resume-wrapper {
+    width: 100vw;
+    padding: 15px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 104px;
+    left: 0;
+  }
+
+  .contact-wrapper p {
+    font-size: 0.5rem;
+  }
+
+  .contact-wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .education-resume-info p {
+    font-size: 0.6rem;
+  }
+
+  .education-resume-wrapper h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Add your styles for large mobile or small tablet devices here */
+  .resume-wrapper {
+    width: 100vw;
+    padding: 15px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 104px;
+    left: 0;
+  }
+
+  .contact-wrapper p {
+    font-size: 0.7rem;
+  }
+
+  .contact-wrapper h2 {
+    font-size: 1.4rem;
+  }
+
+  .education-resume-info p {
+    font-size: 0.7rem;
+  }
+
+  .education-resume-wrapper h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablet devices here */
+  .resume-wrapper {
+    width: 100vw;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 104px;
+    left: 0;
+  }
+}
+
+/* Laptops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Add your styles for laptop devices here */
+  .resume-wrapper {
+    width: 100vw;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 104px;
+    left: 0;
+  }
+}
+
+/* Desktops (1367px and above) */
+@media (min-width: 1367px) {
+  /* Add your styles for desktop devices here */
+  .resume-wrapper {
+    display: block !important;
   }
 }

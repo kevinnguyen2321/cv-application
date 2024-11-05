@@ -6,9 +6,13 @@ export const Education = ({
   addEducationEntry,
   educationInfo,
   removeEducationEntry,
+  isResumeOpen,
 }) => {
   return (
-    <div className='education-wrapper'>
+    <div
+      className='education-wrapper'
+      style={{ display: isResumeOpen ? 'none' : 'block' }}
+    >
       <h2>Education</h2>
       {educationInfo.map((form) => {
         return (

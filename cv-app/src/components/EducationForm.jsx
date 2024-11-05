@@ -47,7 +47,7 @@ export const EducationForm = ({
           handleAddBtnClick();
         }}
       >
-        Add
+        Add Education
       </button>
       {!isInitial && (
         <button className='delete-button'

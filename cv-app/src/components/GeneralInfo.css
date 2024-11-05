@@ -48,6 +48,21 @@
   border: none;
 }
 
+/* MEDIA QUERIES */
+
+/* Small Mobile (Up to 320px) */
+@media (max-width: 320px) {
+  /* Add your styles for small mobile devices here */
+  .general-info-wrapper {
+    width: 100vw;
+  }
+
+  .input-wrapper input,
+  .input-wrapper textarea {
+    width: 90%;
+  }
+}
+
 /* Mobile (321px - 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
   /* Add your styles for mobile devices here */
@@ -57,6 +72,33 @@
 
   .input-wrapper input,
   .input-wrapper textarea {
-    width:90%;
+    width: 90%;
+  }
+}
+
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Add your styles for large mobile or small tablet devices here */
+  .input-wrapper input,
+  .input-wrapper textarea {
+    width: 90%;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablet devices here */
+  .input-wrapper input,
+  .input-wrapper textarea {
+    width: 80%;
+  }
+}
+
+/* Laptops (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Add your styles for laptop devices here */
+  .input-wrapper input,
+  .input-wrapper textarea {
+    width: 60%;
   }
 }

@@ -5,11 +5,16 @@
   background-color: white;
 }
 
+
+
+/* MEDIA QUERIES */
+
 /* Small Mobile (Up to 320px) */
 @media (max-width: 320px) {
   /* Add your styles for small mobile devices here */
   .header-wrapper {
     width: 100%;
+    font-size: 1.2rem;
   }
 }
 
@@ -18,5 +23,21 @@
   /* Add your styles for mobile devices here */
   .header-wrapper {
     width: 100%;
+  }
+}
+
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Add your styles for large mobile or small tablet devices here */
+   .header-wrapper {
+    font-size: 1.3rem;
+   }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablet devices here */
+  .header-wrapper {
+    font-size: 1.4rem;
   }
 }

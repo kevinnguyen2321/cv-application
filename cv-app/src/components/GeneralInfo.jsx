@@ -1,8 +1,11 @@
 import './GeneralInfo.css';
 
-export const GeneralInfo = ({ handleGeneralInfoChange }) => {
+export const GeneralInfo = ({ handleGeneralInfoChange, isResumeOpen }) => {
   return (
-    <div className='general-info-wrapper'>
+    <div
+      className='general-info-wrapper'
+      style={{ display: isResumeOpen ? 'none' : 'flex' }}
+    >
       <div className='input-wrapper'>
         <h2>General Information</h2>
         <form className='general-info-form'>

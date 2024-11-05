@@ -1,8 +1,16 @@
 import './Resume.css';
 
-export const Resume = ({ generalInfo, educationInfo, workInfo }) => {
+export const Resume = ({
+  generalInfo,
+  educationInfo,
+  workInfo,
+  isResumeOpen,
+}) => {
   return (
-    <div className='resume-wrapper'>
+    <div
+      className='resume-wrapper'
+      style={{ display: isResumeOpen ? 'block' : 'none' }}
+    >
       <div className='resume-header'>
         <h2>{generalInfo.name}</h2>
         <p>{generalInfo.currentPosition}</p>

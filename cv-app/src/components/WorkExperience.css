@@ -6,6 +6,8 @@
   padding: 15px;
 }
 
+/* MEDIA QUERIES */
+
 /* Mobile (321px - 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
   /* Add your styles for mobile devices here */
