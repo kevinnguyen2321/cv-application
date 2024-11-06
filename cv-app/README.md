@@ -1,4 +1,5 @@
 # CV-Builder
+[Check out the site here](https://cv-app-resume-builder.netlify.app/)
 
 This is a front-end website built using **React.js** that allows users to create their own resume. Users can input their information, and as they type, they will see live updates on a resume template, giving an instant preview of their resume.
 
